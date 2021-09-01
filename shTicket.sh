@@ -50,7 +50,7 @@ ticketwiz () {
 		echo "Ticket number: $ticketID, Subject: $subject, Info: $info " >> ticketlogs.txt
 	fi
 
-	printf "Subject: Ticket ID:  $ticketID, $subject \n$info" | msmtp -a gmail1 tylerfitzsimmons@outlook.com
+	printf "Subject: Ticket ID:  $ticketID, $subject \n$info" | msmtp -a gmail1 example@example.com
 
 	if [ "$?" == 0 ]
 	then
